@@ -1,0 +1,228 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>RKH Home</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+
+        /* The content from base.css */
+        *{box-sizing:border-box;padding:0;margin:0}body{width:120rem;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;font-feature-settings:“pnum”;font-variant-numeric:proportional-nums}.wrapper{width:100%;max-width:120rem}header{width:100%}.nav{display:flex;flex-direction:column;height:6.25rem;width:100%;color:#fff;background-color:#0b2c48}.pre_nav{height:1.5rem;position:absolute;width:100%}.pre_nav .return{width:13rem;height:100%;padding:0.3rem 0.5rem;margin-left:92.375rem;font-family:Manrope;font-style:normal;font-weight:600;font-size:10px;line-height:13px;text-align:right;letter-spacing:0.125em;background-color:#062036;color:#fff;opacity:0.7}.pre_nav .return a{color:#d8d8d8}.pre_nav .return a:hover{border-bottom:0.125rem solid #d8d8d8}.nav_menu{display:flex;position:absolute;max-width:120rem;margin-top:1.25rem;height:5rem;justify-content:space-between}.nav_menu .logo{width:13.375rem;margin:1.5rem 16rem}.nav_menu .nav_menu_box{display:flex;height:100%;width:45.875rem;margin:0 12rem;justify-content:space-between;align-items:center}.nav_menu .nav_menu_box ul{display:flex;width:100%;justify-content:space-between}.nav_menu .nav_menu_box ul li{list-style:none}.nav_menu .nav_menu_box ul li a{color:#fff;text-decoration:none;font-family:Manrope;font-style:normal;font-weight:600;font-size:14px;line-height:18px;text-align:center;letter-spacing:0.1em}.nav_menu .nav_menu_box ul li a:hover{border-bottom:0.125rem solid #d8d8d8}.intro{background-color:#0b2c48}.intro .intro_motto h1{width:62.625rem;padding-top:12.375rem;padding-left:15.75rem;font-family:Manrope;font-style:normal;font-weight:300;font-size:82px;line-height:93%;letter-spacing:-0.02em;color:#eeeeee}.intro .intro_motto h1 span{color:#ed4d66;font-weight:bold;font-style:bold}.intro .intro_info h3{width:46.875rem;margin-top:3rem;margin-left:15.75rem;margin-bottom:3rem;font-family:Manrope;font-style:normal;font-weight:bold;font-size:28px;line-height:140%;color:#eeeeee}.intro .intro_info h3 span{color:#ed4d66}.intro .intro_img{height:32rem}.solutions{padding:15.875rem;grid-gap:1.5rem;display:grid;grid-template-columns:repeat(2, 1fr);background-color:#fafafa}.sol_grid_item{width:696px;border:1px solid white}.sol_grid_item li{list-style:none}.sol_grid_item a{text-decoration:none}.sol_grid_item a:hover{border-bottom:1px solid grey}.sol_name{padding-left:0;padding-bottom:80px;grid-column:1;grid-row:1}.sol_name h2{width:434px;height:105px;font-family:Manrope;font-style:normal;font-weight:normal;font-size:52px;line-height:95%;letter-spacing:-0.0025em;color:#0e3352}.sol_name h2 .bold{font-weight:bold}.casualty{grid-column:1;grid-row:2/5;background-color:white}.casualty h2{margin:32px 70px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:52px;line-height:69px;color:#0e3352}.casualty ul{display:flex;flex-direction:column;margin:40px 70px}.casualty ul a{font-family:Manrope;font-style:normal;font-weight:normal;font-size:30px;line-height:165%;color:#6f6f6f}.casualty_img{margin-top:100px;margin-left:76px}.logistics{grid-column:1;grid-row:5/9;background-color:#0b2c48;color:#fff}.logistics h2{margin:40px 70px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:52px;line-height:69px}.logistics ul{margin:40px 70px;display:flex;flex-direction:column}.logistics ul a{font-family:Manrope;font-style:normal;font-weight:normal;font-size:30px;line-height:165%;color:#d9d9d9}.property{grid-column:2;grid-row:1/4;background-color:white}.property h2{margin:40px 70px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:52px;line-height:69px;color:#0e3352}.property ul{margin:40px 70px;display:flex;flex-direction:column}.property a{font-family:Manrope;font-style:normal;font-weight:normal;font-size:30px;line-height:165%;color:#6f6f6f}.property_img{margin-top:100px;margin-left:76px}.natur{grid-column:2;grid-row:4/7;background-color:white}.natur h2{margin:40px 70px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:52px;line-height:69px;color:#0e3352}.natur ul{margin:40px 70px;display:flex;flex-direction:column}.natur a{font-family:Manrope;font-style:normal;font-weight:normal;font-size:30px;line-height:165%;color:#6f6f6f}.natur_img{margin-top:100px;margin-left:76px}.global_motto{display:flex;justify-content:space-between;background-color:#fafafa}.global_flex{background-color:grey}.global_flex .light{height:50%;background-color:#fafafa}.global_flex .dark{height:50%}.global_flex .ceo{display:flex}.global_flex .ceo_info{background-color:white;max-width:811px;padding:118px}.global_flex .ceo_info p{padding-top:40px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:32px;line-height:122.5%;color:#0e3352}.global_flex .ceo_info .ceo_signature{padding-top:40px;font-family:Manrope;font-style:normal;font-weight:bold;font-size:32px;line-height:122.5%;color:#6f6f6f}.global_info{display:flex;justify-content:space-between}.global_info .global_flex .dark{height:100%}.global_reach{width:1416px;padding:300px 0;display:flex;justify-content:space-between;background-color:#0e3352}.global_reach h2{width:400px;align-self:start;font-family:Manrope;font-style:normal;font-weight:normal;font-size:52px;line-height:108%;letter-spacing:-0.02em;color:#ffffff}.global_reach h2 span{font-weight:bold}.global_reach p{width:680px;margin:0 200px;font-family:Manrope;font-style:normal;font-weight:normal;font-size:21px;line-height:140%;letter-spacing:-0.02em;color:#ffffff}.item1,.item3{width:18rem;display:flex;flex-direction:column}.item1 .dark,.item3 .dark{background-color:#0e3352}
+        </style>
+  </head>
+  <body>
+      <div class="wrapper">
+        <header>
+            <!-- Box for  navigation-->
+            
+              
+            
+              <div class="nav">
+                <div class="pre_nav">
+                    
+                    <div class="return">PART OF 
+                        <a href="">HOWDENGROUP.CO.UK</a>
+                    </div>
+                    
+                    
+                </div>
+                 
+                  <div class="nav_menu">
+                    <div class="logo">
+                        <img>
+                          src="img/Group 4254.svg"
+                          
+                        </img>
+                      </div>
+                      <div class="nav_menu_box">
+                        <ul>
+                            <li>
+                              <a href="#"
+                                >SPECIALITIES<i class="fas fa-chevron-down"></i
+                              ></a>
+                            </li>
+                            <li><a href="">ABOUT</a></li> 
+                            <li><a href="">NEWS</a></li>
+                            <li><a href="">CLAIMS</a></li>
+                            <li><a href="">CAREERS</a></li>
+                            <li><a href="">LOCATIONS</a></li>
+                          </ul>
+                      </div>
+                   
+                  </div>
+                </div>
+             
+           
+           
+            <!-- Box for introduction-->
+            <div class="intro">
+              
+                <div class="intro_motto">
+                  <h1>SUCCESS, <br> DEFINED BY YOU  <br>
+                    <span>DELIVERED BY US</span></h1>
+                </div>
+                <div class="intro_info">
+                    <h3>
+                       <span>Independence is everything.</span>  We have forged our own path, resisted consolidation and protected employee ownership so individuals can be individuals.
+                    </h3>
+                  </div>
+                <div class="intro_img">
+                  <img src="img/GettyImages-961050380 1.png" alt="imageholder" width="100%" />
+                </div>
+              
+        
+              
+            </div>
+            </div>
+          </header>
+
+          <main>
+            <!-- Box for Solutions mosaic -->
+            <section>
+           
+              <div class="solutions">
+                  <div class="sol_grid_item sol_name"><h2>OUR<br><span class="bold"> SOLUTIONS</span></h2></div>
+                   <div class="sol_grid_item  casualty">
+                       <div class="casualty_img">
+                           <img src="img/Casualty.svg" alt="casualty_img">
+                       </div>
+                       <h2>Casualty</h2>
+                      <ul>
+                          <li><a href="#">International Casualty </a></li>
+                          <li><a href="#">North American Casualty</a></li>
+                          <li><a href="#">Product Recall</a></li>
+                          <li><a href="#">Accident and Health Contingency</a></li>
+                          <li><a href="#">Healthcare, Life Sciences & Clinical Trials Cyber</a></li>
+                     </ul>
+                   </div>
+                   <div class="sol_grid_item logistics">
+                    <div class="logistics_img">
+                        <img src="img/Logistics.svg" alt="logistics_img">
+                    </div>
+                    <h2>Logistics</h2>
+                    <ul>
+                        <li><a href="#">Cargo & Stock Throughput</a></li>
+                        <li><a href="#">Marine</a></li>
+                        <li><a href="#">Aviation</a></li>
+                    </ul>
+                   </div>
+                   <div class="sol_grid_item property">
+                    <div class="property_img">
+                        <img src="img/Property.svg" alt="property_img">
+                    </div>
+                    <h2>Property</h2>
+                    <ul>
+                        <li><a href="#">North American Property</a></li>
+                        <li><a href="#">International Property</a></li>
+                        <li><a href="#">Public Entity & Infrastructure</a></li>
+                        <li><a href="#">Terrorism and Political Violence</a></li>
+                    </ul>
+                   </div>
+                  <div class="sol_grid_item natur">
+                    <div class="natur_img">
+                        <img src="img/Natur.svg" alt="natur_img">
+                    </div>
+                    <h2>Natural Resources & Construction</h2>
+                    <ul>
+                        <li><a href="#">Power & renewables</a></li>
+                        <li><a href="#">Energy Liabilities</a></li>
+                        <li><a href="#"> Natural Resources</a></li>
+                        <li><a href="#">Construction</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </section>
+            <!-- Box for Global -->
+            <section>
+              <div class="global_motto">
+                <div class="global_flex item1">
+                  <div class="light"></div>
+                  <div class="dark"></div>
+                </div>
+
+                <div class="global_flex item2">   
+                  <div class="ceo">
+                  <div class="ceo_info">
+                    <p>“There has been growing pressure on the cost of delivery across our industry which represents a great threat to us all but, at the same time, a great opportunity for those who can grasp”</p>
+                    <div class="ceo_signature">Andy Bragoli<br>CEO</div>
+                  </div>
+                  <div class="ceo_portrait">
+                    <img src="img/photo-1559548331-f9cb98001426 1.png" alt="CEO portrait">
+                  </div>
+                  </div> 
+                </div>
+
+                <div class="global_flex item3">
+                  <div class="light"></div>
+                  <div class="dark"></div>
+                </div>
+              </div>
+
+                <div class="global_info">
+
+                  <div class="global_flex item1">
+                  
+                  <div class="dark"></div>
+                </div>
+                <div class="global_reach">
+                  <h2> GLOBAL REACH <br><span>LOCAL IMPACT </span></h2>
+                  <p>As the nature of risk evolves, so do our lines of business. We cover the full range of insurance and reinsurance broking specialisms, with access to an extensive retail network. We are located in the world’s key insurance markets and serve clients in 130 territories around the globe. </p>
+                </div>
+
+                <div class="global_flex item3">
+                  
+                  <div class="dark"></div>
+                </div>
+
+                </div>
+
+                <div class="global_showcase">
+
+                  <div class="global_flex item1">
+                  
+                  <div class="dark"></div>
+                </div>
+                <div class="global_show">
+                  <img src="img/Vector.svg" alt="world map">
+                  <div class="data_box">
+                    <div class="locations">
+                      <h3>121 Locations</h3>
+                      <p>Offices in 34 countries</p>
+                    </div>
+                    <div class="people">
+                      <h3>3,800 People</h3>
+                      <p>Working together</p>
+                    </div>
+                    <div class="btn">Learn more</div>
+                  </div>
+                </div>
+
+                <div class="global_flex item3">
+                  
+                  <div class="dark"></div>
+                </div>
+
+                </div>
+
+              
+
+            </section>
+          </main>
+      </div>
+      
+  </body>
+  </html>
