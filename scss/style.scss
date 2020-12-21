@@ -1,4 +1,8 @@
 @import "config";
+@import "locations";
+@import "london";
+@import "news";
+@import "news_page";
 
 * {
   box-sizing: border-box;
@@ -6,7 +10,7 @@
   margin: 0;
 }
 body {
-  width: 120rem;
+  width: 100%;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +23,11 @@ body {
 .wrapper {
   width: 100%;
   max-width: 120rem;
+  margin: 0 auto;
 }
+
+/* Header */
+
 header {
   width: 100%;
 }
@@ -108,9 +116,23 @@ header {
     }
   }
 }
+/* Home page */
 
 .intro {
+  position: relative;
   background-color: $dark-bg-color;
+  .vector {
+    width: 620px;
+    height: 1439px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    /* img {
+      width: 620px;
+      height: 1439px;
+    } */
+  }
   .intro_motto {
     h1 {
       width: 62.625rem;
@@ -377,6 +399,7 @@ header {
 
       color: #0e3352;
     }
+
     .ceo_signature {
       padding-top: 40px;
       font-family: Manrope;
@@ -390,6 +413,7 @@ header {
     }
   }
 }
+
 .global_info {
   display: flex;
   justify-content: space-between;
@@ -401,42 +425,44 @@ header {
 }
 .global_reach {
   width: 1416px;
-  padding: 300px 0;
+  padding: 300px 0 0;
   display: flex;
+
   justify-content: space-between;
   background-color: #0e3352;
-  h2 {
-    width: 400px;
-    align-self: start;
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 52px;
-    line-height: 108%;
-    /* or 56px */
+}
+h2 {
+  width: 400px;
+  justify-self: stretch;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 108%;
+  /* or 56px */
 
-    letter-spacing: -0.02em;
+  color: #ffffff;
 
-    color: #ffffff;
-    span {
-      font-weight: bold;
-    }
-  }
-  p {
-    width: 680px;
-    margin: 0 200px;
-    font-family: Manrope;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 21px;
-    line-height: 140%;
-    /* or 29px */
-
-    letter-spacing: -0.02em;
-
-    color: #ffffff;
+  span {
+    justify-self: stretch;
+    font-weight: bold;
   }
 }
+p {
+  width: 680px;
+  margin-left: 0 200px;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 140%;
+  /* or 29px */
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+
 .item1,
 .item3 {
   width: 18rem;
@@ -445,4 +471,866 @@ header {
   .dark {
     background-color: #0e3352;
   }
+}
+
+.data_showcase .container {
+  padding: 120px 252px;
+  background-color: #0e3352;
+  color: #fff;
+}
+.global_show {
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  svg {
+    height: 640px;
+    width: 1000px;
+  }
+}
+.data_box {
+  width: 324px;
+  & > div {
+    margin-bottom: 100px;
+  }
+  h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 71px;
+    letter-spacing: -0.02em;
+  }
+  p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 140%;
+    /* or 29px */
+
+    letter-spacing: -0.02em;
+  }
+  .btn_box {
+    display: flex;
+    padding: auto 20px;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    height: 90px;
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: #1e9fd7;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 140%;
+
+    span {
+      width: 16px;
+    }
+  }
+}
+
+.careers_showcase .container {
+  padding: 120px 252px;
+  background-color: #0e3352;
+  color: #fff;
+}
+
+.careers_info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 108%;
+  }
+  p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 40px;
+  }
+  .btn {
+    display: flex;
+    padding: auto 20px;
+    align-items: center;
+
+    justify-content: start;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #1e9fd7;
+    span {
+      width: 12px;
+    }
+  }
+}
+.careers_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 120px 0 140px;
+  &_item1 {
+    align-self: center;
+  }
+  &_item2 img {
+    margin-bottom: 1rem;
+  }
+}
+
+.people_showcase .container {
+  padding: 120px 252px 60px;
+  background-color: #fff;
+  color: #0e3352;
+}
+
+.people_info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 108%;
+    color: #0e3352;
+
+    span {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    color: #0e3352;
+  }
+  .btn {
+    display: flex;
+    padding: auto 20px;
+    align-items: center;
+
+    justify-content: start;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #1e9fd7;
+    span {
+      width: 12px;
+    }
+  }
+}
+
+.people_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+
+  margin: 100px 0 140px 400px;
+
+  &_item1 {
+    display: grid;
+    grid-template-rows: 2 1fr;
+
+    margin-top: 180px;
+  }
+  &_item2 {
+    display: grid;
+    grid-template-rows: 2 1fr;
+    margin-bottom: 180px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Section News */
+.news_showcase {
+  background: #fff;
+}
+.news_info {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  padding: 0 252px 130px;
+
+  h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 108%;
+    color: #0e3352;
+    span {
+      font-weight: bold;
+    }
+  }
+  .btn {
+    display: flex;
+    padding: auto 20px;
+    align-items: center;
+
+    justify-content: start;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #1e9fd7;
+    span {
+      width: 12px;
+    }
+  }
+}
+.news_images_1 {
+  display: grid;
+  grid-template-columns: 252px 460px 22px 460px 22px 460px 22px 230px;
+  height: 270px;
+
+  & > div {
+    background: #fff;
+  }
+}
+.news_images_2 {
+  display: grid;
+  grid-template-columns: 252px 460px 22px 460px 22px 460px 22px 230px;
+
+  & > div {
+    background: #0e3352;
+  }
+  .image_item_text {
+    height: 347px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    padding: 50px 30px 0;
+
+    &.last {
+      background: #fff;
+      padding-right: 0;
+    }
+    h4 {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 140%;
+    }
+    p {
+      width: 100%;
+      margin-top: 20px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 140%;
+      color: #6f6f6f;
+    }
+    .btn {
+      margin-bottom: 20px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 21px;
+      line-height: 140%;
+      /* identical to box height, or 29px */
+
+      letter-spacing: -0.03em;
+      color: #1e9fd7;
+    }
+  }
+}
+.news_footer {
+  height: 143px;
+  background: #0e3352;
+}
+/* Footer */
+
+footer {
+  background: #0e3352;
+}
+.footer_links {
+  height: 420px;
+  padding: 50px 252px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  ul {
+    list-style: none;
+  }
+  li {
+    padding-bottom: 28px;
+  }
+  a {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+}
+
+.footer_meta {
+  height: 228px;
+  padding: 50px 252px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0b2c48;
+
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.03em;
+
+    color: #ffffff;
+
+    opacity: 0.7;
+  }
+  .social {
+    width: 46px;
+    height: 55px;
+    padding: 10px 0 10px 10px;
+    border: 1px solid #8999a6;
+    a {
+      text-decoration: none;
+    }
+    i {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      letter-spacing: -0.03em;
+
+      color: #8999a6;
+    }
+  }
+}
+/* About page */
+
+/* Intro section */
+
+.intro_about {
+  position: relative;
+  background-color: $dark-bg-color;
+  .about_vector {
+    width: 700px;
+    height: 585px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .intro_about_motto {
+    height: 402px;
+    h1 {
+      width: 62.625rem;
+      padding-top: 90px;
+      padding-left: 15.75rem;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 82px;
+      line-height: 93%;
+      /* or 76px */
+
+      letter-spacing: -0.02em;
+
+      color: #eeeeee;
+      span {
+        font-weight: bold;
+        font-style: bold;
+      }
+    }
+    p {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 44px;
+
+      color: #0e3352;
+      span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 29px;
+
+        color: #6f6f6f;
+      }
+    }
+  }
+  .intro_about_info {
+    position: absolute;
+    top: 330px;
+    right: 252px;
+
+    background: #fff;
+
+    p {
+      width: 1004px;
+      height: 277px;
+      padding: 52px 81px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 39px;
+      color: #0b2c48;
+      letter-spacing: -0.02em;
+    }
+  }
+}
+
+/* Hiperion section */
+.hyperion {
+  background: #fafafa;
+
+  .hyperion_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 252px 100px 252px;
+    h2 {
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 52px;
+      line-height: 100%;
+      /* or 52px */
+
+      letter-spacing: -0.025em;
+
+      color: #152c46;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .hyperion_description {
+      width: 575px;
+      margin-right: 252px;
+
+      h3 {
+        margin-bottom: 10px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+
+        color: #0e3352;
+      }
+      p {
+        width: 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 29px;
+
+        color: #6f6f6f;
+      }
+    }
+  }
+  .hyperion_data {
+    margin: 0 90px;
+    display: flex;
+
+    color: #0e3352;
+
+    .hyperion_vector {
+      svg {
+        margin-top: 90px;
+      }
+    }
+    .hyperion_data_grid {
+      width: 60%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      padding: 0 50px 200px 206px;
+      .hyperion_data_grid_item {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .quantity {
+          display: flex;
+        }
+        p {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: 200;
+          font-size: 40px;
+          line-height: 150%;
+          /* or 210px */
+
+          letter-spacing: -0.02em;
+
+          color: #152c46;
+          &.up {
+            margin-top: -50px;
+          }
+        }
+        .sign {
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 62px;
+          line-height: 300%;
+          /* identical to box height, or 93px */
+
+          letter-spacing: -0.02em;
+
+          color: #152c46;
+        }
+        .number {
+          margin-right: 10px;
+          font-family: Manrope;
+          font-style: light;
+          font-weight: 200;
+          font-size: 140px;
+          line-height: 100%;
+          /* or 210px */
+
+          letter-spacing: -0.02em;
+
+          color: #152c46;
+        }
+        .letters {
+          margin-right: 10px;
+          font-family: Manrope;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 62px;
+          line-height: 320%;
+          /* identical to box height, or 93px */
+
+          letter-spacing: -0.02em;
+
+          color: #152c46;
+        }
+      }
+    }
+  }
+}
+/* Global section */
+
+.global_about {
+  position: relative;
+  background: #0e3352;
+  padding: 0 252px;
+
+  .fully_independent {
+    position: absolute;
+    top: -200px;
+    left: 150px;
+    width: 1620px;
+    height: 440px;
+    padding: 150px 200px 200px 100px;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    h2 {
+      margin-right: 250px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 52px;
+      line-height: 100%;
+      /* or 52px */
+
+      letter-spacing: -0.025em;
+
+      color: #0b2c48;
+      span {
+        font-style: bold;
+      }
+    }
+    p {
+      margin-bottom: 12px;
+      margin-right: 227px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 140%;
+      /* or 29px */
+
+      color: #6f6f6f;
+    }
+  }
+
+  .boutique_motto {
+    display: flex;
+    justify-content: space-between;
+    padding: 380px 0 152px;
+    h2 {
+      width: 600px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 52px;
+      line-height: 52px;
+
+      letter-spacing: -0.025em;
+
+      color: #ffffff;
+    }
+    p {
+      width: 690px;
+      font-family: Manrope;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 21px;
+      line-height: 29px;
+
+      letter-spacing: -0.02em;
+
+      color: #ffffff;
+    }
+  }
+
+  .boutique_vector {
+    svg {
+      width: 100%;
+    }
+  }
+}
+.global_about_innovation {
+  margin-top: 200px;
+  padding-bottom: 225px;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-row: 2;
+
+  .p_box {
+    margin-bottom: 100px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+
+  .d_box {
+    height: 475px;
+
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    .design {
+      position: relative;
+      width: 361px;
+      margin-right: 27px;
+    }
+    .design_text,
+    .development_text {
+      position: absolute;
+      top: 240px;
+      margin: 50px;
+    }
+
+    .development {
+      position: relative;
+      width: 361px;
+    }
+
+    h4 {
+      margin-bottom: 10px;
+      font-family: Manrope;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: -0, 02em;
+      text-align: left;
+      color: #fff;
+    }
+    p {
+      width: 100%;
+      font-family: Manrope;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #fff;
+    }
+  }
+}
+/* Section Employee */
+
+.employee_showcase {
+  position: relative;
+}
+
+.employee_showcase .container {
+  padding: 200px 252px 260px;
+  background-color: #fff;
+  color: #0e3352;
+}
+
+.employee_info {
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  h3 {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 108%;
+    color: #0e3352;
+
+    span {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 40px;
+    color: #6f6f6f;
+  }
+  .btn {
+    display: flex;
+    padding: auto 20px;
+    align-items: center;
+
+    justify-content: start;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #1e9fd7;
+    span {
+      width: 12px;
+    }
+  }
+}
+
+.employee_gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+
+  margin: 100px 0 140px 400px;
+
+  &_item1 {
+    display: grid;
+    grid-template-rows: 2 1fr;
+
+    margin-top: 180px;
+  }
+  &_item2 {
+    display: grid;
+    grid-template-rows: 2 1fr;
+    margin-bottom: 180px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Section Contact */
+
+.contact_about {
+  position: absolute;
+  bottom: -100px;
+  left: 252px;
+  width: 1540px;
+
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00e09e;
+  .contact_description {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+  }
+  p {
+    width: 586px;
+    font-family: Manrope;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    color: #0e3352;
+  }
+
+  .contact_btn {
+    display: inline-block;
+    background: #0e3352;
+    width: 350px;
+    height: 90px;
+    text-align: center;
+    padding-top: 24px;
+    a {
+      text-decoration: none;
+      font-family: Manrope;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 41px;
+      letter-spacing: -0, 02em;
+      text-align: center;
+
+      color: #fff;
+    }
+  }
+}
+#employee + footer {
+  padding-top: 100px;
 }

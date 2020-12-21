@@ -1,0 +1,277 @@
+/* Location London page */
+
+/* Intro section */
+
+.intro_london {
+  .intro_london_img {
+    position: relative;
+    .london_vector {
+      width: 700px;
+      height: 585px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+    }
+
+    .intro_london_motto {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 402px;
+      width: 100%;
+      background: #0e3352;
+
+      h1 {
+        width: 62.625rem;
+        padding-top: 90px;
+        padding-left: 15.75rem;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 82px;
+        line-height: 93%;
+        /* or 76px */
+
+        letter-spacing: -0.02em;
+
+        color: #eeeeee;
+      }
+      p {
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 44px;
+
+        color: #0e3352;
+        span {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 21px;
+          line-height: 29px;
+
+          color: #6f6f6f;
+        }
+      }
+    }
+    .intro_london_info {
+      position: absolute;
+      top: 330px;
+      right: 252px;
+      z-index: 3;
+      background: #fff;
+
+      p {
+        width: 1004px;
+        height: 277px;
+        padding: 52px 81px;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 39px;
+        color: #0b2c48;
+        letter-spacing: -0.02em;
+      }
+    }
+  }
+}
+/* More About London Section */
+.more_about_london {
+  position: relative;
+}
+.london_contacts {
+  position: absolute;
+  top: -180px;
+  left: 160px;
+  width: 450px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 90px;
+  background: #0b2c48;
+  h2 {
+    margin-bottom: 50px;
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 49px;
+    letter-spacing: -0, 0025em;
+    text-align: left;
+    color: #fff;
+    span {
+      font-family: Manrope;
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 49px;
+      letter-spacing: -0, 0025em;
+      text-align: left;
+    }
+  }
+  .london_phone,
+  .london_address {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 30px;
+    font-family: Manrope;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    color: #fff;
+
+    i {
+      margin-right: 20px;
+      color: #eebc59;
+    }
+  }
+  .london_address i {
+    padding-top: 10px;
+  }
+}
+.more_about_london_info {
+  width: 1220px;
+  padding: 100px 0 150px 700px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60px;
+
+  h2 {
+    margin-bottom: 50px;
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    font-family: Manrope;
+    color: #0e3352;
+
+    span {
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -0, 02em;
+      text-align: left;
+    }
+  }
+  .p_1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .p_2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .p_1 p,
+  .p_2 p {
+    width: 475px;
+    font-family: Manrope;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    color: #6f6f6f;
+  }
+  .p_11 {
+    margin-bottom: 20px;
+  }
+}
+.london_people {
+  margin: 0 0 200px 252px;
+  h2 {
+    margin-bottom: 80px;
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    font-family: Manrope;
+    color: #0e3352;
+
+    span {
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -0, 02em;
+      text-align: left;
+    }
+  }
+}
+.london_people_portraits {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    margin-left: 20px;
+  }
+}
+.london_specialities {
+  padding: 252px;
+  background: #f3f3f3;
+  h2 {
+    margin-bottom: 80px;
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: -0, 02em;
+    text-align: left;
+    font-family: Manrope;
+    color: #0e3352;
+
+    span {
+      font-size: 52px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -0, 02em;
+      text-align: left;
+    }
+  }
+  .london_spec {
+    display: flex;
+    justify-content: space-between;
+    .london_spec_vector {
+      padding: 80px 0 50px 30px;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid #d9d9d9;
+      background: #fff;
+      .spec_title {
+        width: 223px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 120px;
+        font-family: Manrope;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #0e3352;
+      }
+      svg {
+        margin-left: 26px;
+      }
+    }
+  }
+}
